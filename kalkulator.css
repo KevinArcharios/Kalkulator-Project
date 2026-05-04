@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace, sans-serif;
+}
+
+body {
+    background-color: rgb(224, 255, 255);
+}
+
+.badan {
+    margin: 40px auto;
+    padding: 2em 0 ;
+    background-color: #6a50dc;
+    width: 500px;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    box-shadow: 10px 12px 10px #211362f4;
+}
+
+.display {
+    overflow: hidden;
+    background-color: #e1ff5d;
+    width: 450px;
+    height: 100px;
+    border-radius: 10px;
+    transition: .3s;
+    color: #331d95;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 20px;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 12px 0px rgba(0, 0, 0, 0.7);
+}
+
+.display:hover {
+    box-shadow: 0 0 20px #e1ff5d, 0 0 40px #e1ff5d;
+    color: #4d4dff;
+    border: 3px solid #e7ff7b;
+}
+
+.tombol {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    justify-content: center;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: .5em;
+    font-size: 2em;
+    border: none;
+    box-shadow: 1px 1px 10px #331d95;
+    text-shadow: 1px 1px 3px white;
+    color: #221362;
+    background-color: azure;
+    transition: .3s;
+}
+
+button:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #9a82ff, 0 0 35px #6a50dc;
+    color: #331d95;
+}
+
+button:active {
+    background-color: #c1b7f1;
+    transform: scale(0.95);
+    box-shadow: inset 4px 4px 10px rgba(51, 29, 149, 0.6), inset -2px -2px 5px rgba(255, 255, 255, 0.8);
+}
+
